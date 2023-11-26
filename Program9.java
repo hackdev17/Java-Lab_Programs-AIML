@@ -19,7 +19,7 @@ public class Program9{
 		    
 		// Logical Operators && (logical And), || (Logical Or), ! (Logical Not)
 		System.out.println(x > 3 && x < 10);	//returns false
-		System.out.println(x < 3 || x > 10);	//rreturns true 
+		System.out.println(x < 3 || x > 10);	//returns true 
 		System.out.println(!(x < 3 || x > 10)); //returns false
 	}
 }
