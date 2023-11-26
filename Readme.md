@@ -20,4 +20,4 @@ $ make clean
 ```
 
 ## License
-This Project uses GNU\_GPLv3 License
+This Project uses GPL-3.0 License
