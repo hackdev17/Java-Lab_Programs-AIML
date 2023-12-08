@@ -15,4 +15,4 @@ run:	build
 
 clean:
 	@echo "Removing class files ..."
-	@rm -rf matrixaddition/
+	@for i in $(JCLASS) ; do rm -rf $${i%.*} ; done
