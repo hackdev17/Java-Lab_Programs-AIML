@@ -5,18 +5,26 @@ You need to have `openjdk` and `make` installed on your system and it must be ad
 
 ## How to run
 To compile classes
+
+Change Directory
 ```
-$ make build
+cd <dir>
+```
+
+Here `<dir>` is `demo` or `Lab`
+
+```
+make build
 ```
 
 To comile and run classes
 ```
-$ make run
+make run
 ```
 
 To remove compiled classes
 ```
-$ make clean
+make clean
 ```
 
 ## License
