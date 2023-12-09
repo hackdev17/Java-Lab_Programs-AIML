@@ -2,8 +2,8 @@
 JRE = java
 JDK = javac
 
-JCLASS = matrixaddition.MatrixAddition \
-	 stackop.StackOp
+JCLASS = Array1D Arraylist BitOp com.sample.Control com.sample.LinkedList2 Fibonacci LoopBreak \
+	 NDimArray QueueExample ReturnEx StackClass
 
 build:
 	@echo "Buiding ..."
@@ -16,4 +16,4 @@ run:	build
 
 clean:
 	@echo "Removing class files ..."
-	@for i in $(JCLASS) ; do rm -rf $${i%.*} ; done
+	@rm -rf *.class com/
