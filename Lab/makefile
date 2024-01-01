@@ -3,8 +3,7 @@ JRE = java
 JDK = javac
 
 # Running class
-JCLASS = matrixaddition.MatrixAddition \
-	 stackop.StackOp TestMyPoint
+JCLASS = matrixaddition.MatrixAddition stackop.StackOp raisesalary.RaiseSalary TestMyPoint
 
 # build programs
 build:

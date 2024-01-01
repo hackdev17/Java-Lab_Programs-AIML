@@ -25,5 +25,28 @@ class Employee{
 		System.out.println("New Salary "+empSalary);
 	}
 
-	public void get
+	public void getDetailes(){
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Enter the ID : ");
+		empID=sc.nextInt();
+		System.out.print("Enter the Name : ");
+		empName=sc.next();
+		System.out.print("Enter the Salary : ");
+		empSalary=sc.nextInt();
+	}
+}
+
+public class RaiseSalary{
+	public static void main(String[] args){
+		Employee e1=new Employee();
+		Employee e2=new Employee();
+		Employee e3=new Employee();
+
+		e1.getDetailes();
+		e2.raiseSalary(100);
+		e2.getDetailes();
+		e2.raiseSalary(100);
+		e3.getDetailes();
+		e3.raiseSalary(200);
+	}
 }
