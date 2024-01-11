@@ -1,10 +1,6 @@
 /*						Program 3
  * Make a class called Employee, which models an employee with an id, name and salary designed as shown in the
  * following class diagram.
- *
- *
- *
- *
  * The method raiseSalary(percent) increase the salary given by the percentage.
  * Develop the Employee class and suitable method of demonstration.
  */
@@ -20,7 +16,7 @@ class Employee{
 
 	public void getDetailes(){
 		Scanner sc=new Scanner(System.in);
-		System.out.print("Enter the ID : ");
+		System.out.print("\nEnter the ID : ");
 		empID=sc.nextInt();
 		System.out.print("Enter the Name : ");
 		empName=sc.next();
