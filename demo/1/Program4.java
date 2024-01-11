@@ -1,7 +1,8 @@
 package Program4;
 
 // Program 4: To find Square Root of a Number
-import java.lang.Math; // Required for Math
+// Required for Math
+import java.lang.Math;
 
 public class Program4{
 	public static void main(String[] args){

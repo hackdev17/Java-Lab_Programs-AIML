@@ -6,12 +6,12 @@ JCLASS = Array1D Arraylist BitOp com.sample.Control com.sample.LinkedList2 Fibon
 	 NDimArray QueueExample ReturnEx StackClass
 
 build:
-	@echo "Buiding ..."
+	@echo "Building ..."
 	@$(JDK) -d . *.java
 	@echo "Build Complete"
 
-run:	build
-	@for i in $(JCLASS) ; do clear ; echo -e "Running class $$i\n" ; \
+run:    build
+	@for i in $(JCLASS) ; do clear ; printf "Running class $$i\n" ; \
 		$(JRE) $$i ; printf "\nPress Return to continue ..." ; read n ; done
 
 clean:

@@ -11,10 +11,10 @@ public class BitOp{
 		int d=a&b;
 		int e=a^b;
 		int f=(~a&b)|(a&~b);
-		System.out.println("a or b :"+binary[c]);		// 1 if either is 1 or both 1
-		System.out.println("a and b : "+binary[d]);		// 1 if both 1
+		System.out.println("a or b  :  "+binary[c]);		// 1 if either is 1 or both 1
+		System.out.println("a and b :  "+binary[d]);		// 1 if both 1
 		System.out.println("a xor b :  "+binary[e]);		// 1 if either value is 1
 									// 0 for both 0 or both 1
-		System.out.println("(~a&b)|(a & ~b) :  "+binary[f]);		// ~ is NOT ; ~a=1100
+		System.out.println("(~a&b)|(a & ~b) :  "+binary[f]);	// ~ is NOT ; ~a=1100
 	}
 }

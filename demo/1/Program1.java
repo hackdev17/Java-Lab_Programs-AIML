@@ -9,6 +9,7 @@
  * It prints any argument passed to it and adds a new line to the output.
  * We can assume that System.out represents the Standard Output Stream.
  */
+
 package Program1;
 
 import java.lang.*;

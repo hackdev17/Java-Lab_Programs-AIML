@@ -17,19 +17,19 @@ public class QueueExample{
 
 		// To remove the head of queue.
 		int removedele=q.remove();
-		System.out.println("removed element-"+ removedele);
+		System.out.println("removed element - "+ removedele);
 
 		System.out.println(q);
 
 		// To view the head of queue
 		int head=q.peek();
-		System.out.println("head of queue-"+ head);
+		System.out.println("head of queue - "+ head);
 
 		// Rest all methods of collection
 		// interface like size and contains
 		// can be used with this
 		// implementation.
 		int size=q.size();
-		System.out.println("Size of queue-"+ size);
+		System.out.println("Size of queue - "+ size);
 	}
 }

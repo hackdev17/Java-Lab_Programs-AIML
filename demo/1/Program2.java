@@ -8,8 +8,8 @@ public class Program2{
 	public static void main(String[] args) {
 		String qq;
 		System.out.println("Enter your name");
-		Scanner s = new Scanner(System.in);
-		qq = s.nextLine();
+		Scanner s=new Scanner(System.in);
+		qq=s.nextLine();
 		System.out.println(qq);
 		s.close();
 	}

@@ -1,6 +1,6 @@
+// Program 6: More on Math Class
 package Program6;
 
-// Program 6: More on Math Class
 import java.lang.Math;
 
 public class Program6{

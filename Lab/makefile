@@ -22,8 +22,9 @@ clean:
 	@for i in $(JCLASS) ; do rm -rf $${i%.*}/ *.class ; done
 
 this:	build
-	@JCLASS=($(JCLASS)) ; JNUM=3 ; while true ; do clear ; echo "Select Programs" ; j=1 ; \
+	@JCLASS=($(JCLASS)) ; JNUM=$$(echo "$(JCLASS)" | tr ' ' '\n' | wc -l) ; \
+		while true ; do clear ; echo "Select Programs" ; j=1 ; \
 		for i in $(JCLASS) ; do echo "$$j. $$i" ; j=$$(( j+1 )) ; done ; \
-		echo "$$(( JNUM+1 )). Exit" ; printf '%s' "--> " ; read n ; \
+		echo "$$(( JNUM+1 )). Exit" ; printf "\n--> " ; read n ; \
 		[ $$n -gt $$JNUM ] && exit ; clear ; printf "Running class $${JCLASS[$$(( n-1 ))]}\n" ; \
 		$(JRE) $${JCLASS[$$(( n-1 ))]} ; printf "\nPress Return to continue ..." ; read n ; done

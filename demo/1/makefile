@@ -1,5 +1,5 @@
 build:
-	@echo "Buiding ..."
+	@echo "Building ..."
 	@javac -d . *.java
 	@echo "Build Complete"
 

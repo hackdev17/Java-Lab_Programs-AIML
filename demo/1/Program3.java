@@ -7,14 +7,14 @@ public class Program3{
 	public static void main(String[] args){
 		int a,b,big;
 		System.out.print("Enter the values for A and B\n> ");
-		Scanner s = new Scanner(System.in);
-		a = Integer.parseInt(s.nextLine());
+		Scanner s=new Scanner(System.in);
+		a=Integer.parseInt(s.nextLine());
 		System.out.print("> ");
-		b = Integer.parseInt(s.nextLine());
+		b=Integer.parseInt(s.nextLine());
 		if(a>b)
-			big = a;
+			big=a;
 		else 
-			big = b;
+			big=b;
 		System.out.println("Biggest is: "+ big);
 	}
 }

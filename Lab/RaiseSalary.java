@@ -18,13 +18,6 @@ class Employee{
 	String empName;
 	float empSalary;
 
-	public void raiseSalary(double percentage){
-		double increaseAmount=(percentage/100)*empSalary;
-		empSalary+=increaseAmount;
-		System.out.println(empName+"'s Salary increased by "+percentage+"%");
-		System.out.println("New Salary "+empSalary);
-	}
-
 	public void getDetailes(){
 		Scanner sc=new Scanner(System.in);
 		System.out.print("Enter the ID : ");
@@ -33,6 +26,13 @@ class Employee{
 		empName=sc.next();
 		System.out.print("Enter the Salary : ");
 		empSalary=sc.nextInt();
+	}
+	
+	public void raiseSalary(double percentage){
+		double increaseAmount=(percentage/100)*empSalary;
+		empSalary+=increaseAmount;
+		System.out.println(empName+"'s Salary increased by "+percentage+"%");
+		System.out.println("New Salary "+empSalary);
 	}
 }
 
@@ -43,7 +43,7 @@ public class RaiseSalary{
 		Employee e3=new Employee();
 
 		e1.getDetailes();
-		e2.raiseSalary(100);
+		e1.raiseSalary(100);
 		e2.getDetailes();
 		e2.raiseSalary(100);
 		e3.getDetailes();
