@@ -4,7 +4,7 @@ JDK = javac
 
 # Running class
 JCLASS = matrixaddition.MatrixAddition stackop.StackOp raisesalary.RaiseSalary TestMyPoint Shape Abstract \
-	 OuterClass Interface
+	 OuterClass Interface MainThreads MainThread
 
 # build programs
 build:
