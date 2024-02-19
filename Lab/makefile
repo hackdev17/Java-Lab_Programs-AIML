@@ -4,7 +4,7 @@ JDK = javac
 
 # Running class
 JCLASS = matrixaddition.MatrixAddition stackop.StackOp raisesalary.RaiseSalary TestMyPoint Shape Abstract \
-	 OuterClass Interface MainThreads MainThread
+	 OuterClass Interface CustomException MyPack.MainApp MainThreads MainThread
 
 # build programs
 build:
@@ -25,7 +25,7 @@ clean:
 run:	build
 	@JCLASS=($(JCLASS)) ; JNUM=$$(echo "$(JCLASS)" | tr ' ' '\n' | wc -l) ; \
 		while true ; do clear ; echo "Select Programs" ; j=1 ; \
-		for i in $(JCLASS) ; do echo "$$j. $$i" ; j=$$(( j+1 )) ; done ; \
-		echo "$$(( JNUM+1 )). Exit" ; printf "\n--> " ; read n ; \
+		for i in $(JCLASS) ; do echo "[$$j] $$i" ; j=$$(( j+1 )) ; done ; \
+		echo -e "[$$j] Exit" ; printf "\n--> " ; read n ; \
 		[ $$n -gt $$JNUM ] && exit ; clear ; printf "Running class $${JCLASS[$$(( n-1 ))]}\n" ; \
 		$(JRE) $${JCLASS[$$(( n-1 ))]} ; printf "\nPress Return to continue ..." ; read n ; done
