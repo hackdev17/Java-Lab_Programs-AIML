@@ -1,4 +1,6 @@
 doc:
-	latexmk -cd -auxdir=tmp/ doc/*.tex
+	latexmk -cd -shell-escape -auxdir=tmp/ doc/*.tex
 
 doc-clean:
+
+.PHONY : doc
